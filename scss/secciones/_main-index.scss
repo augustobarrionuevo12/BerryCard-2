@@ -1,0 +1,77 @@
+
+.main-index {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; 
+}
+
+.TituloInicio {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    font-family: "Quicksand", sans-serif;
+}
+
+.TextoInicio {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    padding: 0%;
+}
+
+.TextoInicio2 {
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.imagenindex2 {
+    width: 80%;
+    display: block; 
+    margin: auto; 
+}
+
+.descargarapp {
+    color: coral;
+    text-align: center;
+}
+
+.imagenindex3 {
+    width: 100%;
+}
+
+/* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
+@media screen and (max-width: 600px) {
+    .TituloInicio {
+        background-color: #353535;
+    }
+
+    .TextoInicio {
+        font-size: 16px;
+    }
+
+    .TextoInicio2 {
+        font-size: 16px;
+    }
+
+    .descargarapp {
+        font-size: 16px;
+    }
+
+    .derechosreservados {
+        font-size: 12px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.MainCotizaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.cotizaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TituloCotizaciones{
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .cotizaciones {
+        width: 100%; 
+        
+    }
+}
+

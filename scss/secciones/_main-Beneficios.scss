@@ -1,0 +1,33 @@
+.titulo-beneficios {
+    font-family: "Permanent Marker", cursive;
+    font-size: 80px;
+    text-align: center;
+    padding: 40px;
+}
+
+.descuentos {
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+}
+.oferta{
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* responsive de beneficios, ajusta el texto a la pagina*/
+@media screen and (max-width: 600px) {
+    #beneficios{
+        font-size: 30px;
+    }
+    .descuentos {
+        font-size: 16px;
+        list-style: none;
+    }
+    .oferta{font-size: 16px;}
+}

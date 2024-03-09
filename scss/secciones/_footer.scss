@@ -1,0 +1,38 @@
+.footer {
+    background-color: #000;
+    padding: 20px;
+    color: red;
+    text-align: center;
+
+    .RedesSociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 40px; // Tamaño máximo para las imágenes de las redes sociales
+            margin: 0 50px; // Espacio entre las imágenes
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .derechosreservados {
+        margin-top: 20px;
+    }
+
+    .LogoFooter {
+        width: 100px;
+    }
+}
+
+.RedesSociales {
+    text-align: center;
+}

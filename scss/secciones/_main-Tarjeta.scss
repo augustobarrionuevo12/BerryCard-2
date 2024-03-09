@@ -1,0 +1,45 @@
+.PediTuBerrycard a {
+    color: red; 
+    text-decoration: none; 
+}
+
+.PediTuBerrycard a:hover {
+    color: rgb(255, 255, 255); 
+}
+.PediTuBerrycard{
+    text-align: center;
+}
+#bodytarjeta {
+    background-color: black;
+}
+
+#PediTuBerrycard {
+    color: red;
+    font-size: 50px;
+}
+.PediTuBerrycard2{
+    text-align: center;
+}
+.PediTuBerrycard2 a{
+    color: red;
+}
+.infoberrycard {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* responsive de beneficios, ajusta el texto a la pagina*/
+@media screen and (max-width: 600px) {
+    .TituloInicio {
+        font-size: 24px;
+    }
+    .infoberrycard {
+        font-size: 16px;
+    }
+}
+.TarjetaMasterBerry{
+ width: 500px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}

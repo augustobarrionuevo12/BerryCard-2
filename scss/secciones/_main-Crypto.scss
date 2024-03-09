@@ -1,0 +1,72 @@
+#cryptos{
+    color: white;
+    font-family: "Nabla", system-ui;
+    font-size: 90px;
+    text-align: center;
+    padding: 30px;
+}
+.gridCriptos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-items: center;
+    margin: 0;
+    padding: 40px;
+    grid-template-areas:
+      "bitcoin ethereum usdt"
+      "usdc dai doge"
+      "binance trx enjin"
+      "monero kucoin chailink";
+     
+    }
+    
+  .bitcoin { grid-area: bitcoin; }
+  
+  .ethereum { grid-area: ethereum; }
+  
+  .usdt { grid-area: usdt; }
+  
+  .usdc { grid-area: usdc; }
+  
+  .dai { grid-area: dai; }
+  
+  .doge { grid-area: doge; }
+  
+  .binance { grid-area: binance; }
+  
+  .trx { grid-area: trx; }
+  
+  .enjin { grid-area: enjin; }
+  
+  .monero { grid-area: monero; }
+  
+  .kucoin { grid-area: kucoin; }
+  
+  .chailink { grid-area: chailink; }
+  
+
+.cryptomonedas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.cryptomonedas{
+    color: gainsboro;
+}
+.panelCryptos h4{
+    text-align: center;
+}
+/* esconde el texto de las imagenes y las achica para decoración y responsive */
+@media screen and (max-width: 600px) {
+    .cryptomonedas img {
+        width: 100px; 
+    }
+
+    .cryptomonedas p {
+        display: none; 
+    }
+}
