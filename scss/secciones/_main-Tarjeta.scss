@@ -1,24 +1,18 @@
-.PediTuBerrycard a {
+.TituloTarjeta a {
     color: red; 
     text-decoration: none; 
 }
 
-.PediTuBerrycard a:hover {
+.TituloTarjeta a:hover {
     color: rgb(255, 255, 255); 
 }
-.PediTuBerrycard{
+.TituloTarjeta{
     text-align: center;
-}
-#bodytarjeta {
-    background-color: black;
 }
 
-#PediTuBerrycard {
-    color: red;
-    font-size: 50px;
-}
 .PediTuBerrycard2{
     text-align: center;
+    padding-top: 100px;
 }
 .PediTuBerrycard2 a{
     color: red;
@@ -32,9 +26,6 @@
 @media screen and (max-width: 600px) {
     .TituloInicio {
         font-size: 24px;
-    }
-    .infoberrycard {
-        font-size: 16px;
     }
 }
 .TarjetaMasterBerry{
