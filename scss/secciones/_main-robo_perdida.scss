@@ -1,76 +1,83 @@
-.grid {  display: grid;
-    grid-template-columns: 1fr 0.9fr 1.1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Sección-1 Sección-2 Sección-2 Sección-2"
-      "Sección-1 Sección-2 Sección-2 Sección-2"
-      "Sección-1 Sección-2 Sección-2 Sección-2"
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1.1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+      "Sección-1 Sección-2 Sección-2 Sección-2" 
+      "Sección-1 Sección-2 Sección-2 Sección-2" 
+      "Sección-1 Sección-2 Sección-2 Sección-2" 
       "Sección-3 Sección-3 Sección-3 Sección-3";
-  }
-  
-  .Sección-1 { grid-area: Sección-1;
-display: flex;
-align-items: center;
-justify-content: center; }
-  
-  .Sección-2 { grid-area: Sección-2; }
-  
-  .Sección-3 { grid-area: Sección-3;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  
+}
+
+.Sección-1 {
+  grid-area: Sección-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sección-2 {
+  grid-area: Sección-2;
+}
+
+.Sección-3 {
+  grid-area: Sección-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #BodyRoboPerdida {
-    background-color: black;
+  background-color: black;
 }
 
 #perdida-robo {
-    font-size: 50px;
-    color: red;
-    text-align: center;
+  font-size: 50px;
+  color: red;
+  text-align: center;
 }
 
 .BotonesPerdidaRobo button {
-    width: 250px;
-    padding: 50px;
-    display: flexbox;
-    align-items: center;
+  width: 250px;
+  padding: 50px;
+  display: flexbox;
+  align-items: center;
 }
 
 #TextoPerdidaRobo {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .derechosreservados {
-    color: white;
+  color: white;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
+
 @media screen and (max-width: 600px) {
-    .grid {
+  .grid {
       display: block;
-    }
-  
-    .Sección-1,
-    .Sección-2,
-    .Sección-3 {
+  }
+
+  .Sección-1,
+  .Sección-2,
+  .Sección-3 {
       width: 100%;
-      padding: 10px; 
-      box-sizing: border-box; 
-    }
-  
-    .BotonesPerdidaRobo button {
+      padding: 10px;
+      box-sizing: border-box;
+  }
+
+  .BotonesPerdidaRobo button {
       width: 100%;
       margin-bottom: 10px;
-    }
-  
-    .card {
-      display: none;
-    }
   }
-  
+
+  .card {
+      display: none;
+  }
+}

@@ -1,8 +1,8 @@
 body {
-    background-image: url('../../recursos/fondoberry2.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-image: url('../recursos/fondoberry2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .TituloInicio {
@@ -30,15 +30,11 @@ body {
 
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
 @media screen and (max-width: 600px) {
-    
     .TituloInicio {
         background-color: #353535;
     }
 
-    .TextoInicio {
-        font-size: 16px;
-    }
-
+    .TextoInicio,
     .TextoInicio2 {
         font-size: 16px;
     }
@@ -46,16 +42,14 @@ body {
     .navbar {
         width: 100%;
     }
-    
-}
-@media screen and (max-width: 600px) {
-  
+
     .contenedor-imagenesmobile-index {
-      display: block;
-      a{
-        color: red;
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-      /* Muestra el contenedor de imágenes solo en dispositivos móviles */ }
+        display: block;
+        a {
+            color: red;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /* Muestra el contenedor de imágenes solo en dispositivos móviles */
     }
+}

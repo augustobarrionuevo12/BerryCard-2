@@ -1,30 +1,33 @@
-.gridResgistro {  display: grid;
+.gridResgistro {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-      "registro login";
-  }
-  
-  .login { grid-area: login;
- }
-  
-  .registro { grid-area: registro; }
-  
+    grid-template-areas: "registro login";
+}
+
+.login {
+    grid-area: login;
+}
+
+.registro {
+    grid-area: registro;
+}
 
 .titulo-registro {
     font-size: 60px;
     text-align: center;
     color: white;
 }
+
 .registro {
     max-width: 600px;
     width: 100%;
     padding: 20px;
-    color: red; 
+    color: red;
     box-sizing: border-box;
-    margin: auto; 
+    margin: auto;
 }
 
 .registro h2 {
@@ -46,9 +49,9 @@
     border: none;
     cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
-    
     .gridRegistro {
-        flex-direction: column-reverse; 
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
     }
 }
