@@ -30,6 +30,7 @@ body {
 
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
 @media screen and (max-width: 600px) {
+    
     .TituloInicio {
         background-color: #353535;
     }
@@ -45,4 +46,16 @@ body {
     .navbar {
         width: 100%;
     }
+    
 }
+@media screen and (max-width: 600px) {
+  
+    .contenedor-imagenesmobile-index {
+      display: block;
+      a{
+        color: red;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      /* Muestra el contenedor de imágenes solo en dispositivos móviles */ }
+    }

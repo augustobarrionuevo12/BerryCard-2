@@ -6,7 +6,7 @@
   font-family: sans-serif; }
 
 body {
-  background-image: url("../../recursos/fondoberry2.png");
+  background-image: url("../recursos/fondoberry2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -41,6 +41,15 @@ body {
     font-size: 16px; }
   .navbar {
     width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor-imagenesmobile-index {
+    display: block;
+    /* Muestra el contenedor de imágenes solo en dispositivos móviles */ }
+    .contenedor-imagenesmobile-index a {
+      color: red;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; } }
 
 .titulo-beneficios {
   font-family: "Permanent Marker", cursive;
@@ -78,7 +87,10 @@ img {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2" "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2" "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2" "SecciónContacto-3 SecciónContacto-3 SecciónContacto-3 SecciónContacto-3"; }
+  grid-template-areas: "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+ "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+ "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+ "SecciónContacto-3 SecciónContacto-3 SecciónContacto-3 SecciónContacto-3"; }
 
 .gridContacto {
   display: grid;
@@ -145,7 +157,10 @@ img {
   justify-items: center;
   margin: 0;
   padding: 40px;
-  grid-template-areas: "bitcoin ethereum usdt" "usdc dai doge" "binance trx enjin" "monero kucoin chailink"; }
+  grid-template-areas: "bitcoin ethereum usdt"
+ "usdc dai doge"
+ "binance trx enjin"
+ "monero kucoin chailink"; }
 
 .bitcoin {
   grid-area: bitcoin; }
@@ -218,7 +233,10 @@ img {
   justify-items: center;
   margin: 0;
   padding: 40px;
-  grid-template-areas: "bitcoin ethereum usdt" "usdc dai doge" "binance trx enjin" "monero kucoin chailink"; }
+  grid-template-areas: "bitcoin ethereum usdt"
+ "usdc dai doge"
+ "binance trx enjin"
+ "monero kucoin chailink"; }
 
 .bitcoin {
   grid-area: bitcoin; }
@@ -396,7 +414,10 @@ img {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "Sección-1 Sección-2 Sección-2 Sección-2" "Sección-1 Sección-2 Sección-2 Sección-2" "Sección-1 Sección-2 Sección-2 Sección-2" "Sección-3 Sección-3 Sección-3 Sección-3"; }
+  grid-template-areas: "Sección-1 Sección-2 Sección-2 Sección-2"
+ "Sección-1 Sección-2 Sección-2 Sección-2"
+ "Sección-1 Sección-2 Sección-2 Sección-2"
+ "Sección-3 Sección-3 Sección-3 Sección-3"; }
 
 .Sección-1 {
   grid-area: Sección-1;
