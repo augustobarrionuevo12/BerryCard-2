@@ -1,36 +1,50 @@
-.TituloTarjeta a {
-    color: red; 
-    text-decoration: none; 
+.TituloTarjeta {
+    font-size: 60px;
+    text-align: center;
+    padding: 50px;
+    font-family: "Nunito", sans-serif;
+
+    a {
+        color: $color-rojo;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
 }
 
-.TituloTarjeta a:hover {
-    color: rgb(255, 255, 255); 
-}
-.TituloTarjeta{
+
+.PediTuBerrycard2 {
     text-align: center;
+    padding-top: 10px;
+
+    a {
+        color: $color-rojo;
+    }
 }
 
-.PediTuBerrycard2{
-    text-align: center;
-    padding-top: 100px;
+.contenedor-imagenesmobile-index {
+    display: none;
+    
 }
-.PediTuBerrycard2 a{
-    color: red;
-}
-.infoberrycard {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+
 /* responsive de beneficios, ajusta el texto a la pagina*/
 @media screen and (max-width: 600px) {
-    .TituloInicio {
+    .TituloTarjeta {
         font-size: 24px;
     }
 }
-.TarjetaMasterBerry{
- width: 500px; 
- display: flex;
- justify-content: center;
- align-items: center;   
+
+.TarjetaMasterBerry {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagenes {
+    display: block;
+    /* Muestra el contenedor de imágenes solo en dispositivos móviles */
 }

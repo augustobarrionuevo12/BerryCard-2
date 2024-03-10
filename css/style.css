@@ -16,12 +16,14 @@ body {
   font-weight: bold;
   text-align: center;
   color: red;
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Quicksand", sans-serif;
+  background-color: #353535;
+  margin-bottom: 0px; }
 
 .TextoInicio {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center; }
 
 .TextoInicio2 {
@@ -450,31 +452,29 @@ footer {
   .card {
     display: none; } }
 
-.TituloTarjeta a {
-  color: red;
-  text-decoration: none; }
-
-.TituloTarjeta a:hover {
-  color: white; }
-
 .TituloTarjeta {
-  text-align: center; }
+  font-size: 60px;
+  text-align: center;
+  padding: 50px;
+  font-family: "Nunito", sans-serif; }
+  .TituloTarjeta a {
+    color: red;
+    text-decoration: none; }
+    .TituloTarjeta a:hover {
+      color: white; }
 
 .PediTuBerrycard2 {
   text-align: center;
-  padding-top: 100px; }
+  padding-top: 10px; }
+  .PediTuBerrycard2 a {
+    color: red; }
 
-.PediTuBerrycard2 a {
-  color: red; }
-
-.infoberrycard {
-  color: white;
-  font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+.contenedor-imagenesmobile-index {
+  display: none; }
 
 /* responsive de beneficios, ajusta el texto a la pagina*/
 @media screen and (max-width: 600px) {
-  .TituloInicio {
+  .TituloTarjeta {
     font-size: 24px; } }
 
 .TarjetaMasterBerry {
@@ -482,6 +482,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.contenedor-imagenes {
+  display: block;
+  /* Muestra el contenedor de imágenes solo en dispositivos móviles */ }
 
 .footer {
   background-color: #000;
@@ -507,6 +511,13 @@ footer {
 
 .RedesSociales {
   text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .RedesSociales img {
+    max-width: 10px;
+    /* Reducir el tamaño máximo de las imágenes en dispositivos móviles */
+    margin: 0 5px;
+    /* Reducir el margen entre las imágenes en dispositivos móviles */ } }
 
 .navbar {
   padding: 0%; }

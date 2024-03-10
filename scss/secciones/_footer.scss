@@ -36,3 +36,10 @@
 .RedesSociales {
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .RedesSociales img {
+        max-width: 10px; /* Reducir el tamaño máximo de las imágenes en dispositivos móviles */
+        margin: 0 5px; /* Reducir el margen entre las imágenes en dispositivos móviles */
+    }
+}
