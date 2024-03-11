@@ -47,32 +47,43 @@
     margin-top: 1rem;
 }
 
-.panelCryptos h4 {
+.panelCryptos{
     text-align: center;
     margin-top: 2rem;
 }
+.textoCriptos{
+    background-color: rgba(0, 0, 0, 0.618);
+    border: red 2px;
+    color: red;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 2px;
+    padding: 2px;
+}
 
 .imagenes_criptos_mobile {
-    display: none;
-    /* Oculta las criptos por defecto */
+    display: none; /* Oculta las criptos por defecto */
 }
+
 @media (max-width: 600px) {
     .imagenes_criptos_mobile {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        background-color: #333; /* Fondo gris oscuro */
-        padding: 20px;
+        background-color: #333;
+        padding: 10px; /* Reducir el padding para compensar */
         margin: 0 auto;
-        max-width: 1200px; /* Ajusta el ancho máximo según tu preferencia */
+        max-width: calc(100% - 20px); /* Ajustar el ancho máximo */
 
         article {
-            width: calc(100% - 20px); /* Ocupa el 100% del ancho disponible */
-            background-color: #fff; /* Fondo blanco */
+            width: calc(50% - 20px); /* Ajustar el ancho de los artículos */
+            background-color: #434242;
             border-radius: 8px;
+            border: #ff0000;
             padding: 20px;
             text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
 
             img {
                 max-width: 100%;
@@ -82,7 +93,7 @@
             h2 {
                 margin-top: 10px;
                 font-size: 18px;
-                color: #333; /* Color del texto */
+                color: #ff0000;
             }
         }
     }

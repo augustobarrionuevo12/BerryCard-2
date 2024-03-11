@@ -101,9 +101,6 @@ body {
   .titulo-beneficios {
     font-size: 40px;
     text-decoration: solid; }
-  .imagenes_descuentos article {
-    width: calc(100% - 20px);
-    /* Ancho completo para pantallas pequeñas */ }
   .col {
     display: none; }
   .imagenes_descuentos {
@@ -114,12 +111,14 @@ body {
     gap: 10px;
     margin: 20px; }
   .imagenes_descuentos article {
-    width: calc(50% - 20px);
+    width: calc(100% - 20px);
+    /* Ancho completo para pantallas pequeñas */
     margin-bottom: 20px;
+    /* Espacio inferior entre las cajas */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: rgba(234, 0, 0, 0.481);
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,9 +235,18 @@ body {
 .card-body p {
   margin-top: 1rem; }
 
-.panelCryptos h4 {
+.panelCryptos {
   text-align: center;
   margin-top: 2rem; }
+
+.textoCriptos {
+  background-color: rgba(0, 0, 0, 0.618);
+  border: red 2px;
+  color: red;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 2px;
+  padding: 2px; }
 
 .imagenes_criptos_mobile {
   display: none;
@@ -251,27 +259,27 @@ body {
     justify-content: center;
     gap: 20px;
     background-color: #333;
-    /* Fondo gris oscuro */
-    padding: 20px;
+    padding: 10px;
+    /* Reducir el padding para compensar */
     margin: 0 auto;
-    max-width: 1200px;
-    /* Ajusta el ancho máximo según tu preferencia */ }
+    max-width: calc(100% - 20px);
+    /* Ajustar el ancho máximo */ }
     .imagenes_criptos_mobile article {
-      width: calc(100% - 20px);
-      /* Ocupa el 100% del ancho disponible */
-      background-color: #fff;
-      /* Fondo blanco */
+      width: calc(50% - 20px);
+      /* Ajustar el ancho de los artículos */
+      background-color: #434242;
       border-radius: 8px;
+      border: #ff0000;
       padding: 20px;
-      text-align: center; }
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif; }
       .imagenes_criptos_mobile article img {
         max-width: 100%;
         height: auto; }
       .imagenes_criptos_mobile article h2 {
         margin-top: 10px;
         font-size: 18px;
-        color: #333;
-        /* Color del texto */ } }
+        color: #ff0000; } }
 
 #cryptos {
   color: white;
@@ -316,9 +324,18 @@ body {
 .card-body p {
   margin-top: 1rem; }
 
-.panelCryptos h4 {
+.panelCryptos {
   text-align: center;
   margin-top: 2rem; }
+
+.textoCriptos {
+  background-color: rgba(0, 0, 0, 0.618);
+  border: red 2px;
+  color: red;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 2px;
+  padding: 2px; }
 
 .imagenes_criptos_mobile {
   display: none;
@@ -331,33 +348,36 @@ body {
     justify-content: center;
     gap: 20px;
     background-color: #333;
-    /* Fondo gris oscuro */
-    padding: 20px;
+    padding: 10px;
+    /* Reducir el padding para compensar */
     margin: 0 auto;
-    max-width: 1200px;
-    /* Ajusta el ancho máximo según tu preferencia */ }
+    max-width: calc(100% - 20px);
+    /* Ajustar el ancho máximo */ }
     .imagenes_criptos_mobile article {
-      width: calc(100% - 20px);
-      /* Ocupa el 100% del ancho disponible */
-      background-color: #fff;
-      /* Fondo blanco */
+      width: calc(50% - 20px);
+      /* Ajustar el ancho de los artículos */
+      background-color: #434242;
       border-radius: 8px;
+      border: #ff0000;
       padding: 20px;
-      text-align: center; }
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif; }
       .imagenes_criptos_mobile article img {
         max-width: 100%;
         height: auto; }
       .imagenes_criptos_mobile article h2 {
         margin-top: 10px;
         font-size: 18px;
-        color: #333;
-        /* Color del texto */ } }
+        color: #ff0000; } }
 
 .MainCotizaciones {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center; }
+
+.BTC_tiemporeal {
   text-align: center; }
 
 .cotizaciones {
@@ -368,9 +388,12 @@ body {
 .TituloCotizaciones {
   text-align: center; }
 
-@media screen and (min-width: 600px) {
-  .cotizaciones {
-    width: 100%; } }
+@media (max-width: 600px) {
+  .tradingview-widget-container {
+    max-width: 90%;
+    /* Hace que el contenedor del iframe ocupe todo el ancho disponible */ }
+  #BTC_Grafica_en_Tiempo_Real {
+    max-width: 90%; } }
 
 .gridResgistro {
   display: grid;

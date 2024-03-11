@@ -5,7 +5,9 @@
     justify-content: center;
     text-align: center; 
 }
-
+.BTC_tiemporeal{
+    text-align: center;
+}
 .cotizaciones {
     display: flex;
     flex-direction: column;
@@ -14,10 +16,11 @@
 .TituloCotizaciones{
     text-align: center;
 }
-@media screen and (min-width: 600px) {
-    .cotizaciones {
-        width: 100%; 
-        
+@media (max-width: 600px) {
+    .tradingview-widget-container {
+      max-width: 90%; /* Hace que el contenedor del iframe ocupe todo el ancho disponible */
     }
-}
-
+    #BTC_Grafica_en_Tiempo_Real{
+        max-width: 90%;
+    }
+  }
