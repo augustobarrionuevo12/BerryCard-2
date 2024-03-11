@@ -1,20 +1,20 @@
 // utilidades
-@import './utilidades/reseteo';
-@import './utilidades/variables';
-@import './utilidades/animaciones';
+@import './utilidades/reseteo.scss';
+@import './utilidades/variables.scss';
+@import './utilidades/animaciones.scss';
 
 // Todos los main
-@import './secciones/main-index';
-@import '../scss/secciones/main-Beneficios';
-@import '../scss/secciones/main-contacto';
-@import '../scss/secciones/main-Crypto';
-@import '../scss/secciones/main-Crypto';
-@import '../scss/secciones/main-CryptoTiempoReal';
-@import '../scss/secciones/main-Formulario_registro';
-@import '../scss/secciones/main-Formulario_registro';
-@import '../scss/secciones/main-robo_perdida';
-@import '../scss/secciones/main-Tarjeta';
+@import './secciones/main-index.scss';
+@import '../scss/secciones/main-Beneficios.scss';
+@import '../scss/secciones/main-contacto.scss';
+@import '../scss/secciones/main-Crypto.scss';
+@import '../scss/secciones/main-Crypto.scss';
+@import '../scss/secciones/main-CryptoTiempoReal.scss';
+@import '../scss/secciones/main-Formulario_registro.scss';
+@import '../scss/secciones/main-Formulario_registro.scss';
+@import '../scss/secciones/main-robo_perdida.scss';
+@import '../scss/secciones/main-Tarjeta.scss';
 
 // footer y header
-@import '../scss/secciones/footer';
-@import '../scss/secciones/header';
+@import '../scss/secciones/footer.scss';
+@import '../scss/secciones/header.scss';

@@ -43,22 +43,43 @@ body {
   display: block;
   text-align: center; }
 
-.contenedor-imagenesmobile-index {
+.imagenes_index_mobile {
   display: none; }
 
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
-@media screen and (max-width: 600px) {
+@media (max-width: 1000px) {
   body {
     overflow-x: hidden; }
   .TituloInicio {
     font-size: 40px; }
   .TextoInicio,
   .TextoInicio2 {
-    font-size: 16px; } }
-
-.contenedor-imagenesmobile-index {
-  display: block;
-  width: 80%; }
+    font-size: 16px; }
+  .col {
+    display: none; }
+  .imagenes_index_mobile {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px; }
+    .imagenes_index_mobile a {
+      color: #000000; }
+    .imagenes_index_mobile article {
+      width: calc(100% - 20px);
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+    .imagenes_index_mobile article img {
+      max-width: 100%; } }
 
 .navbar {
   padding: 0px;
@@ -66,39 +87,17 @@ body {
 
 .titulo-beneficios {
   font-family: "Roboto", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   padding: 40px;
   background-color: black;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: red; }
 
 .imagenes_descuentos {
   display: none; }
 
-.imagenes_descuentos {
-  padding-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px; }
-
-.imagenes_descuentos article {
-  width: calc(50% - 20px);
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
-
-.imagenes_descuentos article img {
-  max-width: 100%; }
-
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .titulo-beneficios {
     font-size: 40px;
     text-decoration: solid; }
@@ -106,7 +105,27 @@ body {
     width: calc(100% - 20px);
     /* Ancho completo para pantallas pequeñas */ }
   .col {
-    display: none; } }
+    display: none; }
+  .imagenes_descuentos {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px; }
+  .imagenes_descuentos article {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(234, 0, 0, 0.481);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .imagenes_descuentos article img {
+    max-width: 100%; } }
 
 #contacto {
   font-size: 80px;
@@ -190,7 +209,18 @@ body {
   margin: 0;
   padding: 40px; }
 
-.bitcoin, .ethereum, .usdt, .usdc, .dai, .doge, .binance, .trx, .enjin, .monero, .kucoin, .chailink {
+.bitcoin,
+.ethereum,
+.usdt,
+.usdc,
+.dai,
+.doge,
+.binance,
+.trx,
+.enjin,
+.monero,
+.kucoin,
+.chailink {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -210,12 +240,38 @@ body {
   text-align: center;
   margin-top: 2rem; }
 
-/* Esconde el texto de las imágenes y las achica para decoración y responsive */
-@media screen and (max-width: 600px) {
-  .cryptomonedas img {
-    width: 100px; }
-  .cryptomonedas p {
-    display: none; } }
+.imagenes_criptos_mobile {
+  display: none;
+  /* Oculta las criptos por defecto */ }
+
+@media (max-width: 600px) {
+  .imagenes_criptos_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    /* Fondo gris oscuro */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Ajusta el ancho máximo según tu preferencia */ }
+    .imagenes_criptos_mobile article {
+      width: calc(100% - 20px);
+      /* Ocupa el 100% del ancho disponible */
+      background-color: #fff;
+      /* Fondo blanco */
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center; }
+      .imagenes_criptos_mobile article img {
+        max-width: 100%;
+        height: auto; }
+      .imagenes_criptos_mobile article h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #333;
+        /* Color del texto */ } }
 
 #cryptos {
   color: white;
@@ -233,7 +289,18 @@ body {
   margin: 0;
   padding: 40px; }
 
-.bitcoin, .ethereum, .usdt, .usdc, .dai, .doge, .binance, .trx, .enjin, .monero, .kucoin, .chailink {
+.bitcoin,
+.ethereum,
+.usdt,
+.usdc,
+.dai,
+.doge,
+.binance,
+.trx,
+.enjin,
+.monero,
+.kucoin,
+.chailink {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -253,12 +320,38 @@ body {
   text-align: center;
   margin-top: 2rem; }
 
-/* Esconde el texto de las imágenes y las achica para decoración y responsive */
-@media screen and (max-width: 600px) {
-  .cryptomonedas img {
-    width: 100px; }
-  .cryptomonedas p {
-    display: none; } }
+.imagenes_criptos_mobile {
+  display: none;
+  /* Oculta las criptos por defecto */ }
+
+@media (max-width: 600px) {
+  .imagenes_criptos_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    /* Fondo gris oscuro */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Ajusta el ancho máximo según tu preferencia */ }
+    .imagenes_criptos_mobile article {
+      width: calc(100% - 20px);
+      /* Ocupa el 100% del ancho disponible */
+      background-color: #fff;
+      /* Fondo blanco */
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center; }
+      .imagenes_criptos_mobile article img {
+        max-width: 100%;
+        height: auto; }
+      .imagenes_criptos_mobile article h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #333;
+        /* Color del texto */ } }
 
 .MainCotizaciones {
   display: flex;
@@ -440,39 +533,73 @@ footer {
     display: none; } }
 
 .TituloTarjeta {
-  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
   text-align: center;
   padding: 50px;
-  font-family: "Nunito", sans-serif; }
-  .TituloTarjeta a {
-    color: red;
-    text-decoration: none; }
-    .TituloTarjeta a:hover {
-      color: white; }
+  color: red;
+  background-color: black; }
 
 .PediTuBerrycard2 {
   text-align: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  font-size: 40px; }
   .PediTuBerrycard2 a {
     color: red; }
 
-.contenedor-imagenesmobile-index {
+.TarjetaMasterBerry {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -450px; }
+
+.imagenes_tarjeta_desktop {
+  margin-top: -300; }
+
+.imagenes_tarjeta_mobile {
   display: none; }
 
 /* responsive de beneficios, ajusta el texto a la pagina*/
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .TituloTarjeta {
     font-size: 24px; } }
 
 .TarjetaMasterBerry {
-  width: 500px;
+  width: 300px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: -350px; }
 
 .contenedor-imagenes {
   display: block;
   /* Muestra el contenedor de imágenes solo en dispositivos móviles */ }
+
+.imagenes_tarjeta_mobile {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  align-items: center;
+  text-align: center; }
+  .imagenes_tarjeta_mobile a {
+    color: #000000; }
+  .imagenes_tarjeta_mobile article {
+    width: calc(100% - 20px);
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: red; }
+  .imagenes_tarjeta_mobile img {
+    max-width: 100%; }
+
+.PediTuBerrycard2 {
+  font-size: 20px; }
 
 .footer {
   background-color: #000;

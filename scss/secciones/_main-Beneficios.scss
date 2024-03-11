@@ -5,45 +5,20 @@
 
 .titulo-beneficios {
     font-family: "Roboto", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     padding: 40px;
     background-color: black;
     margin-bottom: 30px;
+    color: red;
 }
 
 .imagenes_descuentos {
     display: none;
 }
 
-.imagenes_descuentos {
-    padding-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px;
-}
 
-.imagenes_descuentos article {
-    width: calc(50% - 20px);
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.imagenes_descuentos article img {
-    max-width: 100%;
-}
-
-
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .titulo-beneficios {
         font-size: 40px;
         text-decoration: solid;
@@ -57,4 +32,30 @@
     .col {
         display: none;
     }
+    .imagenes_descuentos {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+   
+}
+
+.imagenes_descuentos article {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(234, 0, 0, 0.481);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenes_descuentos article img {
+    max-width: 100%;
+}
 }

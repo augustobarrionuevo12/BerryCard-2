@@ -27,21 +27,22 @@ body {
     font-family: "Quicksand", sans-serif;
     text-align: center;
 }
-.container-cards{
+
+.container-cards {
     display: block;
     text-align: center;
 }
-.contenedor-imagenesmobile-index {
-    display: none; }
-  
+
+.imagenes_index_mobile {
+    display: none;
+}
 
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
-@media screen and (max-width: 600px) {
+@media (max-width: 1000px) {
     body {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
-  
     .TituloInicio {
         font-size: 40px;
     }
@@ -50,9 +51,36 @@ body {
     .TextoInicio2 {
         font-size: 16px;
     }
-   
-}
-.contenedor-imagenesmobile-index{
-    display: block;
-    width: 80%;
+
+    .col {
+        display: none;
+    }
+
+    .imagenes_index_mobile {
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px;
+        a{
+            color: #000000;
+        }
+        article {
+            width: calc(100% - 20px);
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        article img {
+            max-width: 100%;
+        }
+    }
 }

@@ -16,7 +16,18 @@
     padding: 40px;
 }
 
-.bitcoin, .ethereum, .usdt, .usdc, .dai, .doge, .binance, .trx, .enjin, .monero, .kucoin, .chailink {
+.bitcoin,
+.ethereum,
+.usdt,
+.usdc,
+.dai,
+.doge,
+.binance,
+.trx,
+.enjin,
+.monero,
+.kucoin,
+.chailink {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,13 +52,39 @@
     margin-top: 2rem;
 }
 
-/* Esconde el texto de las imágenes y las achica para decoración y responsive */
-@media screen and (max-width: 600px) {
-    .cryptomonedas img {
-        width: 100px;
-    }
+.imagenes_criptos_mobile {
+    display: none;
+    /* Oculta las criptos por defecto */
+}
+@media (max-width: 600px) {
+    .imagenes_criptos_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        background-color: #333; /* Fondo gris oscuro */
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el ancho máximo según tu preferencia */
 
-    .cryptomonedas p {
-        display: none;
+        article {
+            width: calc(100% - 20px); /* Ocupa el 100% del ancho disponible */
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                margin-top: 10px;
+                font-size: 18px;
+                color: #333; /* Color del texto */
+            }
+        }
     }
 }
+

@@ -1,50 +1,90 @@
 .TituloTarjeta {
-    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
     text-align: center;
     padding: 50px;
-    font-family: "Nunito", sans-serif;
-
-    a {
-        color: $color-rojo;
-        text-decoration: none;
-
-        &:hover {
-            color: rgb(255, 255, 255);
-        }
-    }
+    color: red;
+    background-color: black;
 }
 
 
 .PediTuBerrycard2 {
     text-align: center;
     padding-top: 10px;
+    font-size: 40px;
 
     a {
         color: $color-rojo;
     }
 }
 
-.contenedor-imagenesmobile-index {
+
+.TarjetaMasterBerry {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -450px;
+}
+
+.imagenes_tarjeta_desktop {
+    margin-top: -300;
+}
+
+.imagenes_tarjeta_mobile {
     display: none;
-    
 }
 
 
 /* responsive de beneficios, ajusta el texto a la pagina*/
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .TituloTarjeta {
         font-size: 24px;
     }
 }
 
 .TarjetaMasterBerry {
-    width: 500px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -350px;
 }
 
 .contenedor-imagenes {
     display: block;
     /* Muestra el contenedor de imágenes solo en dispositivos móviles */
+}
+
+.imagenes_tarjeta_mobile {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+
+    a {
+        color: #000000;
+    }
+
+    article {
+        width: calc(100% - 20px);
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: red;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.PediTuBerrycard2 {
+    font-size: 20px;
 }
