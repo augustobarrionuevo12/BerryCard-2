@@ -6,12 +6,12 @@ body {
 }
 
 .TituloInicio {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     text-align: center;
     color: red;
-    font-family: "Quicksand", sans-serif;
-    background-color: #353535;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #000000;
     margin-bottom: 0px;
 }
 
@@ -30,8 +30,24 @@ body {
 
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
 @media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden; /* Evitar scroll horizontal */
+    }
+
+    .carousel-inner .carousel-item img {
+        max-width: 80%;
+        height: auto; /* Ajustar proporcionalmente la altura */
+        align-items: center;
+    }
+
+    .carousel-caption {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
     .TituloInicio {
-        background-color: #353535;
+        font-size: 40px;
     }
 
     .TextoInicio,
@@ -39,17 +55,25 @@ body {
         font-size: 16px;
     }
 
-    .navbar {
-        width: 100%;
+    .navbar-collapse {
+        background-color: #000; /* Fondo de la barra de navegación */
     }
 
-    .contenedor-imagenesmobile-index {
+    .navbar-nav {
+        width: 100%;
+        text-align: center; /* Centrar elementos de la barra de navegación */
+    }
+
+    .nav-item {
         display: block;
-        a {
-            color: red;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        /* Muestra el contenedor de imágenes solo en dispositivos móviles */
+        margin-bottom: 10px; /* Espaciado entre elementos de la barra de navegación */
+    }
+
+    .footer ul {
+        padding: 0; /* Eliminar el relleno de la lista del footer */
+    }
+
+    .footer .RedesSociales {
+        display: flex;
     }
 }

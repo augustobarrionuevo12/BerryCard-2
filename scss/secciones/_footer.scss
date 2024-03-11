@@ -1,6 +1,6 @@
 .footer {
     background-color: #000;
-    padding: 20px;
+    padding: 10px;
     color: red;
     text-align: center;
 
@@ -11,7 +11,7 @@
 
         img {
             max-width: 40px; // Tamaño máximo para las imágenes de las redes sociales
-            margin: 0 50px; // Espacio entre las imágenes
+            margin: 10px; // Espacio entre las imágenes
         }
     }
 
@@ -40,6 +40,6 @@
 @media screen and (max-width: 600px) {
     .RedesSociales img {
         max-width: 10px; /* Reducir el tamaño máximo de las imágenes en dispositivos móviles */
-        margin: 0 5px; /* Reducir el margen entre las imágenes en dispositivos móviles */
+        
     }
 }

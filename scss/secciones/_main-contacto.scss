@@ -1,9 +1,13 @@
 #contacto {
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
-    color: #b4b1b1;
+    color: #ff0000;
+    background-color: black;
     grid-column: 1 / span 4;
-    margin-top: 50px;
+    margin-top: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    
 }
 
 .gridContacto {
@@ -25,6 +29,7 @@
     grid-column: 3 / span 2;
     grid-row: 1;
     color: white;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .SecciónContacto-3 {
@@ -57,3 +62,20 @@
     border: none;
     cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+    #contacto {
+      font-size: 40px; // Tamaño de fuente más pequeño para pantallas más pequeñas
+      grid-column: initial; // Eliminar la propiedad grid-column para que el título ocupe toda la anchura
+    }
+  
+    .gridContacto {
+      display: block; // Cambiar la visualización de la rejilla a bloque para que el texto esté debajo del formulario
+    }
+  
+    .SecciónContacto-1,
+    .SecciónContacto-2,
+    .SecciónContacto-3 {
+      grid-column: initial; // Eliminar la propiedad grid-column para que cada sección ocupe toda la anchura
+    }
+  }
+  
