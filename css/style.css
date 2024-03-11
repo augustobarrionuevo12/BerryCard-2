@@ -39,70 +39,46 @@ body {
   font-family: "Quicksand", sans-serif;
   text-align: center; }
 
+.container-cards {
+  display: block;
+  text-align: center; }
+
+.contenedor-imagenesmobile-index {
+  display: none; }
+
 /* Responsive index para pantallas de móviles; las imágenes tienen buena adaptación. */
 @media screen and (max-width: 600px) {
   body {
-    overflow-x: hidden;
-    /* Evitar scroll horizontal */ }
-  .carousel-inner .carousel-item img {
-    max-width: 80%;
-    height: auto;
-    /* Ajustar proporcionalmente la altura */
-    align-items: center; }
-  .carousel-caption {
-    width: 100%;
-    padding: 0 20px;
-    text-align: center; }
+    overflow-x: hidden; }
   .TituloInicio {
     font-size: 40px; }
   .TextoInicio,
   .TextoInicio2 {
-    font-size: 16px; }
-  .navbar-collapse {
-    background-color: #000;
-    /* Fondo de la barra de navegación */ }
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-    /* Centrar elementos de la barra de navegación */ }
-  .nav-item {
-    display: block;
-    margin-bottom: 10px;
-    /* Espaciado entre elementos de la barra de navegación */ }
-  .footer ul {
-    padding: 0;
-    /* Eliminar el relleno de la lista del footer */ }
-  .footer .RedesSociales {
-    display: flex; } }
+    font-size: 16px; } }
+
+.contenedor-imagenesmobile-index {
+  display: block;
+  width: 80%; }
+
+.navbar {
+  padding: 0px;
+  margin: 0px; }
 
 .titulo-beneficios {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 80px;
   text-align: center;
   padding: 40px; }
-  @media screen and (max-width: 600px) {
-    .titulo-beneficios {
-      font-size: 30px; } }
 
-.descuentos {
-  font-size: 30px;
-  text-align: center;
-  list-style: none; }
-  @media screen and (max-width: 600px) {
-    .descuentos {
-      font-size: 16px; } }
+.imagenes_descuentos {
+  display: none; }
 
-.oferta {
-  font-size: 30px;
-  text-align: center;
-  color: red; }
-  @media screen and (max-width: 600px) {
-    .oferta {
-      font-size: 16px; } }
-
-img {
-  max-width: 100%;
-  height: auto; }
+@media screen and (max-width: 600px) {
+  .titulo-beneficios {
+    font-size: 30px; }
+  .imagenes_descuentos {
+    display: flex;
+    width: 30px; } }
 
 #contacto {
   font-size: 80px;

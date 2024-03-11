@@ -1,35 +1,24 @@
+.navbar{
+    padding: 0px;
+    margin: 0px;
+}
 .titulo-beneficios {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Roboto", sans-serif;
     font-size: 80px;
     text-align: center;
     padding: 40px;
-
-    @media screen and (max-width: 600px) {
-        font-size: 30px;
-    }
 }
 
-.descuentos {
+.imagenes_descuentos{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo-beneficios{
     font-size: 30px;
-    text-align: center;
-    list-style: none;
-
-    @media screen and (max-width: 600px) {
-        font-size: 16px;
-    }
 }
-
-.oferta {
-    font-size: 30px;
-    text-align: center;
-    color: red;
-
-    @media screen and (max-width: 600px) {
-        font-size: 16px;
-    }
+.imagenes_descuentos{
+    display: flex;
+    width: 30px;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
 }
