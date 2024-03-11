@@ -1,12 +1,13 @@
+/* Estilos generales */
 .TituloTarjeta {
     font-family: "Roboto", sans-serif;
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
     padding: 50px;
     color: red;
     background-color: black;
+    margin-bottom: 0; /* Ajuste para reducir el espacio entre el h1 y la tarjeta */
 }
-
 
 .PediTuBerrycard2 {
     text-align: center;
@@ -14,77 +15,61 @@
     font-size: 40px;
 
     a {
-        color: $color-rojo;
+        color: $color-rojo; // Ajusta este color según tu paleta de colores
     }
 }
-
 
 .TarjetaMasterBerry {
     width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -450px;
+    margin-top: 0px;
 }
 
 .imagenes_tarjeta_desktop {
-    margin-top: -300;
+    margin-top: -300; // Ajusta este valor según sea necesario
 }
 
 .imagenes_tarjeta_mobile {
     display: none;
 }
 
-
-/* responsive de beneficios, ajusta el texto a la pagina*/
+/* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     .TituloTarjeta {
         font-size: 24px;
     }
-}
 
-.TarjetaMasterBerry {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -350px;
-}
-
-.contenedor-imagenes {
-    display: block;
-    /* Muestra el contenedor de imágenes solo en dispositivos móviles */
-}
-
-.imagenes_tarjeta_mobile {
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
-
-    a {
-        color: #000000;
+    .TarjetaMasterBerry {
+        width: 100%;
+        margin-top: 0; // Cambia el margen superior a 0 para evitar superposiciones
     }
 
-    article {
-        width: calc(100% - 20px);
-        width: calc(50% - 20px);
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        background-color: red;
+    .imagenes_tarjeta_desktop {
+        display: none;
     }
 
-    img {
-        max-width: 100%;
-    }
-}
+    .imagenes_tarjeta_mobile {
+        padding-top: 50px; // Ajusta este valor según sea necesario
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px auto;
+        text-align: center;
 
-.PediTuBerrycard2 {
-    font-size: 20px;
+        article {
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background-color: red; // Ajusta este color según sea necesario
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
