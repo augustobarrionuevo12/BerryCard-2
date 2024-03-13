@@ -603,12 +603,15 @@ footer {
     flex-direction: column;
     gap: 10px;
     margin: 20px auto;
-    text-align: center; }
+    text-align: center;
+    color: #000000; }
+    .imagenes_tarjeta_mobile a {
+      color: #000000; }
     .imagenes_tarjeta_mobile article {
       width: calc(100% - 20px);
       margin-bottom: 20px;
       padding: 10px;
-      border: 1px solid #000000;
+      border: 2px solid #000000;
       border-radius: 5px;
       background-color: red; }
     .imagenes_tarjeta_mobile img {

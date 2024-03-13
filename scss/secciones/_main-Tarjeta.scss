@@ -58,18 +58,22 @@
         gap: 10px;
         margin: 20px auto;
         text-align: center;
-
+        color: #000000;
+        a{
+            color: #000000;
+        }
         article {
             width: calc(100% - 20px);
             margin-bottom: 20px;
             padding: 10px;
-            border: 1px solid #000000;
+            border: 2px solid #000000;
             border-radius: 5px;
-            background-color: red; // Ajusta este color según sea necesario
+            background-color: rgb(255, 0, 0); // Ajusta este color según sea necesario
         }
 
         img {
             max-width: 100%;
         }
+        
     }
 }
